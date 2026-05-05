@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience | Hlamulo Ndhlovu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" id="desktop-nav">
+            <div class="nav-left">
+                <a href="index.html#hero" class="logo">
+                    <span class="logo-mark">&lt;/&gt;</span>
+                    <span class="logo-text">Hlamulo<span> Ndhlovu</span></span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h2>Experience</h2>
+                <p>How I’ve been applying full stack and mobile development skills.</p>
+            </div>
+            <div class="section-body timeline">
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-role">Full stack & Mobile Developer</span>
+                            <span class="timeline-time">Year – Present</span>
+                        </div>
+                        <p>
+                            Designing and building web apps from front‑end interfaces to back‑end logic,
+                            focusing on clean architecture, maintainability, and performance.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-role">Cyber Security Knowledge</span>
+                            <span class="timeline-time">Ongoing</span>
+                        </div>
+                        <p>
+                            Applying cyber security education to development work — thinking about threats,
+                            safe data handling, basic hardening, and secure coding patterns.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-role">Personal & Learning Projects</span>
+                            <span class="timeline-time">Ongoing</span>
+                        </div>
+                        <p>
+                            Building projects to explore new tools, frameworks, and security concepts —
+                            always improving my ability to deliver reliable, secure apps.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Hlamulo Ndhlovu. Built with care.</p>
+    </footer>
+
+    <button class="ai-assistant-toggle" id="ai-toggle">
+        <span>AI</span>
+        <span>Ask about Hlamulo</span>
+    </button>
+
+    <div class="ai-assistant-window" id="ai-window">
+        <div class="ai-assistant-header">
+            <div class="ai-assistant-header-title">
+                <div class="ai-assistant-avatar">H</div>
+                <div class="ai-assistant-header-text">
+                    <strong>Hlamulo AI</strong>
+                    <span>Ask me about my skills, projects &amp; CV</span>
+                </div>
+            </div>
+            <button class="ai-assistant-close" id="ai-close" aria-label="Close assistant">×</button>
+        </div>
+        <div class="ai-assistant-body" id="ai-messages">
+            <div class="ai-message ai">
+                Hi, I’m an assistant trained on Hlamulo’s portfolio. You can ask things like
+                “What does Hlamulo specialize in?” or “Tell me about their projects.”
+            </div>
+        </div>
+        <div class="ai-assistant-footer">
+            <input
+                type="text"
+                class="ai-assistant-input"
+                id="ai-input"
+                placeholder="Ask something about Hlamulo..."
+            />
+            <button class="ai-assistant-send" id="ai-send">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
