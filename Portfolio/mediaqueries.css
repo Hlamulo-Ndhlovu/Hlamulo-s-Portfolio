@@ -1,0 +1,96 @@
+/* Responsive tweaks */
+
+@media (max-width: 960px) {
+    .nav {
+        padding-inline: 1.1rem;
+    }
+
+    .nav-links {
+        position: absolute;
+        inset-inline: 1.1rem;
+        top: calc(var(--nav-height) + 0.5rem);
+        flex-direction: column;
+        gap: 0.9rem;
+        padding: 0.9rem 1rem;
+        border-radius: 14px;
+        background: radial-gradient(circle at 0 0, rgba(15, 23, 42, 0.97), rgba(15, 23, 42, 0.99));
+        border: 1px solid rgba(31, 41, 55, 1);
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+        transform-origin: top right;
+        transform: scale(0.98) translateY(-6px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.16s ease-out, transform 0.18s ease-out;
+    }
+
+    .nav-links.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: scale(1) translateY(0);
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+    }
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.4rem;
+    }
+
+    .hero-meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-grid,
+    .skills-grid,
+    .project-grid,
+    .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .spotlight-card,
+    .project-impact {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .featured-project {
+        grid-column: span 1;
+    }
+
+    .section-body {
+        padding-inline: 1.2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        padding-inline: 1.15rem;
+        padding-top: 5rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-meta {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .section {
+        margin-top: 3.4rem;
+    }
+
+    .section-body {
+        padding-block: 1.3rem;
+    }
+
+    .timeline {
+        padding-left: 1.1rem;
+    }
+
+    .project-grid {
+        gap: 1.1rem;
+    }
+}

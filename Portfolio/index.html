@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hlamulo Ndhlovu | Full stack & Mobile Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <nav class="nav" id="desktop-nav">
+            <div class="nav-left">
+                <a href="#hero" class="logo">
+                    <span class="logo-mark">&lt;/&gt;</span>
+                    <span class="logo-text">Hlamulo<span> Ndhlovu</span></span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Published app builder · Full stack & Mobile Developer · Mobile-minded problem solver</p>
+                <h1>Hi, I’m <span class="accent">Hlamulo</span>. I build software people can actually use.</h1>
+                <p class="hero-subtitle">
+                    I design and build reliable web, mobile, and desktop experiences with clean interfaces,
+                    practical back-end thinking, and a strong focus on secure development.
+                </p>
+                <div class="hero-badges">
+                    <span>Published on Google Play</span>
+                    <span>Software Development Student</span>
+                    <span>Mobile Development Focus</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="projects.html" class="btn primary">View My Work</a>
+                    <a href="Hlamulo's Resume.pdf" class="btn ghost" download>Download CV</a>
+                    <a href="contact.html" class="btn ghost">Let’s Collaborate</a>
+                </div>
+                <div class="hero-meta">
+                    <div>
+                        <span class="hero-label">Published project</span>
+                        <span class="hero-value">StudySinc Android app</span>
+                    </div>
+                    <div>
+                        <span class="hero-label">Core stack</span>
+                        <span class="hero-value">C# · Java · Kotlin · JavaScript · SQL</span>
+                    </div>
+                    <div>
+                        <span class="hero-label">What I build</span>
+                        <span class="hero-value">Mobile apps · Web apps · Secure systems</span>
+                    </div>
+                    <div>
+                        <span class="hero-label">Available for</span>
+                        <span class="hero-value">Junior developer roles & internships</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-aside">
+                <div class="profile-photo-card">
+                    <div class="profile-photo-frame">
+                        <img
+                            src="assets/profile-photo.jpg"
+                            alt="Portrait of Hlamulo Ndhlovu"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+                        />
+                        <div class="profile-photo-placeholder">
+                            <span>HN</span>
+                            <small>Add your photo as<br />assets/profile-photo.jpg</small>
+                        </div>
+                    </div>
+                    <p class="profile-photo-caption">Full stack & Mobile Developer</p>
+                </div>
+                <div class="hero-card">
+                    <p class="code-title">Developer profile</p>
+                    <pre class="code-block"><code>const hlamulo = {
+  focus: "full stack and mobile apps",
+  shipped: "StudySinc on Google Play",
+  goal: "junior developer role",
+  mindset: "learn, build, improve"
+};</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="section spotlight-section">
+            <div class="section-header">
+                <h2>Featured Build</h2>
+                <p>A real product shipped publicly, not just a mockup.</p>
+            </div>
+            <div class="section-body spotlight-card">
+                <div>
+                    <span class="project-tag">Published Android App</span>
+                    <h3>StudySinc</h3>
+                    <p>
+                        StudySinc helps students coordinate classes, group chats, shared notes, friends,
+                        and live study sessions from one place. It shows my ability to take an idea from
+                        planning to a public release.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.prokreatives.studysync&pcampaignid=web_share" class="btn primary" target="_blank" rel="noreferrer">View on Google Play</a>
+                        <a href="projects.html" class="btn ghost">See Projects</a>
+                    </div>
+                </div>
+                <div class="spotlight-metrics">
+                    <div>
+                        <strong>Published</strong>
+                        <span>Google Play</span>
+                    </div>
+                    <div>
+                        <strong>Category</strong>
+                        <span>Education</span>
+                    </div>
+                    <div>
+                        <strong>Built for</strong>
+                        <span>Students & study groups</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>A developer who turns ideas into working, useful products.</p>
+            </div>
+            <div class="section-body about-grid">
+                <div>
+                    <p>
+                        I’m a Software Development student and Full stack & Mobile Developer with a strong interest in cyber security.
+                        I enjoy building applications that are practical, responsive, and easy to understand.
+                    </p>
+                    <p>
+                        My goal is to grow into a strong junior developer who can contribute to real teams, write maintainable code,
+                        and keep learning while solving real problems.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="pill-card">
+                        <span class="pill-title">What I bring</span>
+                        <ul>
+                            <li>Solid understanding of full‑stack web fundamentals</li>
+                            <li>Attention to security, performance, and UI/UX detail</li>
+                            <li>Collaborative mindset with a strong learning attitude</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Hlamulo Ndhlovu. Built with care.</p>
+    </footer>
+
+    <button class="ai-assistant-toggle" id="ai-toggle">
+        <span>AI</span>
+        <span>Ask about Hlamulo</span>
+    </button>
+
+    <div class="ai-assistant-window" id="ai-window">
+        <div class="ai-assistant-header">
+            <div class="ai-assistant-header-title">
+                <div class="ai-assistant-avatar">H</div>
+                <div class="ai-assistant-header-text">
+                    <strong>Hlamulo AI</strong>
+                    <span>Ask me about my skills, projects &amp; CV</span>
+                </div>
+            </div>
+            <button class="ai-assistant-close" id="ai-close" aria-label="Close assistant">×</button>
+        </div>
+        <div class="ai-assistant-body" id="ai-messages">
+            <div class="ai-message ai">
+                Hi, I'm Hlamulo's portfolio assistant. Ask me about his skills, education, projects, CV, contact details, career goals, or what questions I can answer.
+            </div>
+        </div>
+        <div class="ai-assistant-footer">
+            <input
+                type="text"
+                class="ai-assistant-input"
+                id="ai-input"
+                placeholder="Ask something about Hlamulo..."
+            />
+            <button class="ai-assistant-send" id="ai-send">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

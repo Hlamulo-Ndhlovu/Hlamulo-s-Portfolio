@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Hlamulo Ndhlovu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" id="desktop-nav">
+            <div class="nav-left">
+                <a href="index.html#hero" class="logo">
+                    <span class="logo-mark">&lt;/&gt;</span>
+                    <span class="logo-text">Hlamulo<span> Ndhlovu</span></span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p>Published work and active builds that show how I turn ideas into usable software.</p>
+            </div>
+            <div class="section-body">
+                <div class="project-filters">
+                    <button class="btn ghost project-filter is-active" data-filter="all">All</button>
+                    <button class="btn ghost project-filter" data-filter="published">Published</button>
+                    <button class="btn ghost project-filter" data-filter="progress">In progress</button>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card featured-project" data-category="published">
+                        <div class="project-header">
+                            <h3>StudySinc</h3>
+                            <span class="project-tag">Published Android App</span>
+                        </div>
+                        <p class="project-description">
+                            StudySinc helps students and study groups coordinate everything in one place:
+                            online classes, schedules, meeting links, group chat, shared notes, friends,
+                            and optional live study sessions.
+                        </p>
+                        <div class="project-impact">
+                            <div>
+                                <strong>Public release</strong>
+                                <span>Available on Google Play</span>
+                            </div>
+                            <div>
+                                <strong>Purpose</strong>
+                                <span>Study coordination and collaboration</span>
+                            </div>
+                            <div>
+                                <strong>Audience</strong>
+                                <span>Students and study groups</span>
+                            </div>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Android</li>
+                            <li>Education</li>
+                            <li>Messaging</li>
+                            <li>Live sessions</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.prokreatives.studysync&pcampaignid=web_share" target="_blank" rel="noreferrer">View on Google Play</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="progress">
+                        <div class="project-header">
+                            <h3>Full stack & Mobile Project in Progress</h3>
+                            <span class="project-tag">Coming Soon</span>
+                        </div>
+                        <p class="project-description">
+                            A new web application is currently being planned and developed. It will be
+                            added here with screenshots, features, and links once it is ready to share.
+                        </p>
+                        <ul class="project-tech">
+                            <li>In progress</li>
+                            <li>Building</li>
+                            <li>Coming soon</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="contact.html">Ask about this project</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="progress">
+                        <div class="project-header">
+                            <h3>Cyber Security Project in Progress</h3>
+                            <span class="project-tag">Coming Soon</span>
+                        </div>
+                        <p class="project-description">
+                            A security-focused project is under development. It will highlight secure
+                            coding, awareness, testing, or cyber security concepts once completed.
+                        </p>
+                        <ul class="project-tech">
+                            <li>In progress</li>
+                            <li>Development</li>
+                            <li>Coming soon</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="contact.html">Ask about this project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Hlamulo Ndhlovu. Built with care.</p>
+    </footer>
+
+    <button class="ai-assistant-toggle" id="ai-toggle">
+        <span>AI</span>
+        <span>Ask about Hlamulo</span>
+    </button>
+
+    <div class="ai-assistant-window" id="ai-window">
+        <div class="ai-assistant-header">
+            <div class="ai-assistant-header-title">
+                <div class="ai-assistant-avatar">H</div>
+                <div class="ai-assistant-header-text">
+                    <strong>Hlamulo AI</strong>
+                    <span>Ask me about my skills, projects &amp; CV</span>
+                </div>
+            </div>
+            <button class="ai-assistant-close" id="ai-close" aria-label="Close assistant">×</button>
+        </div>
+        <div class="ai-assistant-body" id="ai-messages">
+            <div class="ai-message ai">
+                Hi, I'm Hlamulo's portfolio assistant. Ask me about his skills, education, projects, CV, contact details, career goals, or what questions I can answer.
+            </div>
+        </div>
+        <div class="ai-assistant-footer">
+            <input
+                type="text"
+                class="ai-assistant-input"
+                id="ai-input"
+                placeholder="Ask something about Hlamulo..."
+            />
+            <button class="ai-assistant-send" id="ai-send">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

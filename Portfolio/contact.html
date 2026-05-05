@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Hlamulo Ndhlovu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" id="desktop-nav">
+            <div class="nav-left">
+                <a href="index.html#hero" class="logo">
+                    <span class="logo-mark">&lt;/&gt;</span>
+                    <span class="logo-text">Hlamulo<span> Ndhlovu</span></span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Reach out about roles, collaborations, or anything full stack and mobile development related.</p>
+            </div>
+            <div class="section-body contact-grid">
+                <div>
+                    <p>
+                        I’m open to full-time roles, freelance work, and opportunities to build
+                        secure, high‑quality applications. The best way to reach me is by email.
+                    </p>
+                    <ul class="contact-list">
+                        <li><span>Email:</span> <a href="mailto:hlamulondhlovu11@gmail.com">hlamulondhlovu11@gmail.com</a></li>
+                        <li><span>GitHub:</span> <a href="https://github.com/Hlamulo-Ndhlovu" target="_blank" rel="noreferrer">github.com/Hlamulo-Ndhlovu</a></li>
+                        <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/hlamulo-ndhlovu-a91922321" target="_blank" rel="noreferrer">linkedin.com/in/hlamulo-ndhlovu-a91922321</a></li>
+                        <li><span>CV:</span> <a href="Hlamulo's Resume.pdf" download>Download CV</a></li>
+                    </ul>
+                </div>
+                <form class="contact-form" method="POST">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell me a bit about your project or opportunity" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary full-width">Send message</button>
+                    <p class="form-note">This demo form validates your message locally. Use the email link to send a real message.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Hlamulo Ndhlovu. Built with care.</p>
+    </footer>
+
+    <button class="ai-assistant-toggle" id="ai-toggle">
+        <span>AI</span>
+        <span>Ask about Hlamulo</span>
+    </button>
+
+    <div class="ai-assistant-window" id="ai-window">
+        <div class="ai-assistant-header">
+            <div class="ai-assistant-header-title">
+                <div class="ai-assistant-avatar">H</div>
+                <div class="ai-assistant-header-text">
+                    <strong>Hlamulo AI</strong>
+                    <span>Ask me about my skills, projects &amp; CV</span>
+                </div>
+            </div>
+            <button class="ai-assistant-close" id="ai-close" aria-label="Close assistant">×</button>
+        </div>
+        <div class="ai-assistant-body" id="ai-messages">
+            <div class="ai-message ai">
+                Hi, I'm Hlamulo's portfolio assistant. Ask me about his skills, education, projects, CV, contact details, career goals, or what questions I can answer.
+            </div>
+        </div>
+        <div class="ai-assistant-footer">
+            <input
+                type="text"
+                class="ai-assistant-input"
+                id="ai-input"
+                placeholder="Ask something about Hlamulo..."
+            />
+            <button class="ai-assistant-send" id="ai-send">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
