@@ -50,8 +50,18 @@
     }
 
     .spotlight-card,
+    .case-study-grid,
     .project-impact {
         grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contact-cta-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-cta-card .hero-actions {
+        justify-content: flex-start;
     }
 
     .featured-project {
