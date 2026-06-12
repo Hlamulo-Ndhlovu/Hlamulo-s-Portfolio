@@ -141,8 +141,8 @@
 
   function applyFilter(filter) {
     cards.forEach((card) => {
-      const categories = card.getAttribute("data-category").split(" ");
-      const show = filter === "all" || categories.includes(filter);
+      const category = card.getAttribute("data-category");
+      const show = filter === "all" || category === filter;
       card.style.display = show ? "" : "none";
     });
   }

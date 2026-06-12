@@ -35,7 +35,7 @@
 
     .hero {
         grid-template-columns: minmax(0, 1fr);
-        gap: 2.4rem;
+        gap: 2rem;
     }
 
     .hero-meta {
@@ -75,8 +75,9 @@
 
 @media (max-width: 640px) {
     main {
-        padding-inline: 1.15rem;
-        padding-top: 5rem;
+        padding-inline: 1.1rem;
+        padding-top: 2.4rem;
+        padding-bottom: 2rem;
     }
 
     .hero-actions {
@@ -102,5 +103,46 @@
 
     .project-grid {
         gap: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding-inline: 1rem;
+        padding-top: 2.2rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .nav {
+        padding-inline: 0.9rem;
+    }
+
+    .hero {
+        gap: 1.6rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.2rem, 9vw, 3rem);
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .section {
+        margin-top: 3rem;
+    }
+
+    .section-body {
+        padding: 1.05rem 1rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+
+    .project-impact,
+    .case-study-grid {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
