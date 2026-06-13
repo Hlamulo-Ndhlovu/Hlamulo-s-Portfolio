@@ -202,9 +202,11 @@
     skills:
       "His technical skills include C#, Java, Kotlin, JavaScript, SQL, HTML, CSS, ASP.NET Core MVC, Jetpack Compose, Entity Framework Core, Firebase basics, REST APIs, SQL Server, MySQL, Firebase Realtime Database, Git, GitHub, Visual Studio, Android Studio, and browser DevTools.",
     projects:
-      "His project experience includes StudySinc, a published Android app on Google Play for student coordination; Let's Move Out, a live business website for a moving and property care company; a Gasoline Mobile Application built with Android and Jetpack Compose; a Cybersecurity Awareness Chatbot built in C#; and an Order Management Web Application built with ASP.NET Core MVC and Entity Framework Core.",
+      "His project experience includes StudySinc, a published Android app on Google Play for student coordination; Let's Move Out, a live business website for a moving and property care company; CMCS, an ASP.NET Core MVC contract monthly claim system; a Gasoline Mobile Application built with Android and Jetpack Compose; a Cybersecurity Awareness Chatbot built in C#; and an Order Management Web Application built with ASP.NET Core MVC and Entity Framework Core.",
     letsMoveOut:
       "Let's Move Out is a live business website Hlamulo built for a concierge-style moving and property care company. It features an instant-estimate calculator, booking form, testimonials, and a fully responsive design, built with HTML, CSS, and JavaScript and deployed on GitHub Pages at hlamulo-ndhlovu.github.io/lets-move-out.",
+    cmcs:
+      "CMCS is a Contract Monthly Claim System built with ASP.NET Core MVC and Bootstrap. It lets lecturers submit monthly claims, enter hours and hourly rates, auto-calculate totals, upload supporting documents, and confirm claim details through a validated form.",
     studysinc:
       "StudySinc is Hlamulo's published Android app on Google Play. It helps students coordinate classes, schedules, meeting links, group chats, shared notes, friends, and live study sessions.",
     gasoline:
@@ -220,7 +222,7 @@
     cv:
       "You can download Hlamulo's resume from the portfolio. The download file is Hlamulo's Resume.pdf.",
     askTopics:
-      "You can ask me about Hlamulo's profile, role, education, Rosebank College modules, technical skills, programming languages, mobile development, full stack development, projects, StudySinc, Let's Move Out website, Gasoline app, cybersecurity chatbot, order management app, career goals, CV/resume, contact details, GitHub, LinkedIn, or why he would be a good junior developer candidate.",
+      "You can ask me about Hlamulo's profile, role, education, Rosebank College modules, technical skills, programming languages, mobile development, full stack development, projects, StudySinc, Let's Move Out website, CMCS claim system, Gasoline app, cybersecurity chatbot, order management app, career goals, CV/resume, contact details, GitHub, LinkedIn, or why he would be a good junior developer candidate.",
   };
 
   function includesAny(text, keywords) {
@@ -288,6 +290,10 @@
 
     if (includesAny(q, ["lets move out", "let's move out", "move out", "moving", "website"])) {
       return knowledge.letsMoveOut;
+    }
+
+    if (includesAny(q, ["cmcs", "contract monthly claim", "claim system", "submit claim", "claims"])) {
+      return knowledge.cmcs;
     }
 
     if (includesAny(q, ["gasoline", "fuel"])) {
